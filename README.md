@@ -10,5 +10,8 @@ Joe Doe comments is classified as Positive
 Jofila comment is classified as Negative
 Adams Comment is classified as neutral
 
+The Sentiments_Api file contains code used in fetching data for implementation purpose.
+The Table is design using column (id,sentiments_word,status).
+
 check it out and comments down if you find any portion of the code difficult to implement.
 am willing to help out or maybe write a similar class to solve a related problem.
