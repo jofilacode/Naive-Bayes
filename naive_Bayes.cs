@@ -5,7 +5,7 @@ using System.Web;
 
 public class naive_Bayes
 {
-    Sentiment_Api Afzal = new Sentiment_Api();
+    Sentiment_Api data = new Sentiment_Api();
     private List<string> positive = new List<string>();
     private List<string> negative = new List<string>();
     private string status;
@@ -27,11 +27,11 @@ public class naive_Bayes
    
 	public naive_Bayes()
 	{
-        total_trainee_set = Afzal.get_total_record_count();
-        total_positive_count = Afzal.get_Sentiments_count("positive");
-        total_negative_count = Afzal.get_Sentiments_count("negative");
-        positive = Afzal.get_Sentiments_Data_P();
-        negative = Afzal.get_Sentiments_Data_N();
+        total_trainee_set = data.get_total_record_count();
+        total_positive_count = data.get_Sentiments_count("positive");
+        total_negative_count = data.get_Sentiments_count("negative");
+        positive = data.get_Sentiments_Data_P();
+        negative = data.get_Sentiments_Data_N();
 
 
 	}
